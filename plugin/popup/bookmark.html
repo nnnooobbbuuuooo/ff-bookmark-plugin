@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bookmark it!</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="bookmark.min.css"/>
+    </head>
+    <body>
+        <h1>Bookmark it!</h1>
+        <div id="popup__content">
+            <form action="" method="post">
+                <div class="hidden">
+                    <label for="id__input">id</label>
+                    <input type="text" name="id__input" id="id__input">
+                </div>
+                <div class="capture">
+                    <label for="capture__input" class="hidden">Capture</label>
+                    <input type="text" name="capture__input" id="capture__input" class="hidden">
+                </div>
+                <div>
+                    <label for="title__input">Title</label>
+                    <input type="text" name="title__input" id="title__input">
+                </div>
+                <div>
+                    <label for="url__input">Url</label>
+                    <input type="text" name="url__input" id="url__input">
+                </div>
+                <div class="folder">
+                    <label for="folder__input">Folder</label>
+                    <input type="text" list="folder__list" name="folder__input" id="folder__input">
+                    <datalist class="folder__list" id="folder__list"></datalist>
+                </div>
+                <div class="tags">
+                    <label for="tags__input">Tags</label>
+                    <input type="text" list="tags__list" name="tags__input" id="tags__input">
+                    <datalist class="tags__list" id="tags__list"></datalist>
+                </div>
+            </form>
+            <button id="save__btn">Save</button>
+            <button id="update__btn" class="hidden">Update</button><button id="delete__btn" class="hidden">Delete</button>
+        </div>
+        <div id="error__content" class="hidden">
+            <p>Can't save this web page.</p><p>Try a different page.</p>
+        </div>
+        <div id="result__content"></div>
+        <footer>
+            <button id="bookmarks__btn">Go to bookmark page</button>
+        </footer>
+        <script src="./lz-string.min.js"></script>
+        <script src="./bookmark.js"></script>
+    </body>
+</html>
+

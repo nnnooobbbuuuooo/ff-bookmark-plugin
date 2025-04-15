@@ -1,0 +1,54 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+::-moz-selection,
+::selection {
+  background: #000;
+  color: #fff;
+  text-shadow: none;
+}
+
+html, body {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+html {
+  font-size: 15px;
+  font-family: sans-serif;
+  line-height: 125%;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+}
+
+* {
+  font-weight: 300;
+}
+
+a {
+  color: initial;
+  text-decoration: none;
+}
+a:hover h2 {
+  font-weight: 700;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 0 0.4rem;
+  padding-left: 0.4rem;
+  overflow-y: scroll;
+  height: 100%;
+  width: 100%;
+}
+.list__header {
+  grid-column: span 2;
+}
+.list__header h1 {
+  font-size: 3.4rem;
+  line-height: 1;
+  font-weight: 900;
+}
